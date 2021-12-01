@@ -8,6 +8,7 @@ const app = express();
 app.use(json());
 
 app.use('/', root);
+// app.use('/login', login);
 
 app.use('/images', express.static(path.join(__dirname, '..', 'uploads')));
 
