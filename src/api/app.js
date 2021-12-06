@@ -8,9 +8,7 @@ const app = express();
 app.use(json());
 
 app.use('/', root);
-// app.use('/login', login);
-
-app.use('/images', express.static(path.join(__dirname, '..', 'uploads')));
+app.use(express.static(path.resolve(__dirname, 'src/uploads')));
 
 // Não remover esse end-point, ele é necessário para o avaliador
 app.get('/', (request, response) => {
