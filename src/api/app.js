@@ -1,3 +1,5 @@
+// Projeto realizado com ampla pesquisa no course da Trybe. 
+// Helpers: Bruno Augusto, Kevin Oliveira e mentorias de Pedro Ramos, Nato, Rafa e Ricci.
 require('dotenv').config();
 const express = require('express');
 const path = require('path');
